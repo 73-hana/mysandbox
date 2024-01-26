@@ -1,14 +1,12 @@
 <template>
-  <h1>My Blog</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eveniet consequuntur laboriosam mollitia iure accusamus at aliquam. Tempora ullam alias sapiente repudiandae sequi porro, exercitationem explicabo vero accusantium similique minus.</p>
+  <h1>My Blog（仮）</h1>
+  <p>日中はWebページを作ってます。</p>
   <ul>
-    <li><NuxtLink to="/article/economics/">Economics</NuxtLink></li>
-    <li><NuxtLink to="/article/political-science">Political Science</NuxtLink></li>
-    <li><NuxtLink to="/article/sociology/">Sociology</NuxtLink></li>
-    <li><NuxtLink to="/article/programming">Programming</NuxtLink></li>
+    <li><NuxtLink to="/article/economics/">経済学</NuxtLink></li>
+    <li><NuxtLink to="/article/sociology/">社会学</NuxtLink></li>
+    <li><NuxtLink to="/article/math/">数学</NuxtLink></li>
+    <li><NuxtLink to="/article/political-science">政治学</NuxtLink></li>
+    <li><NuxtLink to="/article/programming">プログラミング</NuxtLink></li>
   </ul>
-  
-  
-  
-  
+  <p>内容に間違いがあれば<a href="https://github.com/73-hana/myblog/issues/new" target="_blank" rel="noreferrer noopener">GitHubのIssue</a>からお知らせください。</p>
 </template>
