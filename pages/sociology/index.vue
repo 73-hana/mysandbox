@@ -7,4 +7,5 @@
       <li><NuxtLink to="/sociology/article/basic/synthetic-sociology">総合社会学</NuxtLink></li>
     </ul>
   </section>
+  <p><NuxtLink to="/">トップ</NuxtLink></p>
 </template>
