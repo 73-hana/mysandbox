@@ -1,7 +1,6 @@
 <template>
   <h1>My Blog（仮）</h1>
   <p>日中はWebサイトを作ってます。</p>
-  <p><NuxtLink to="/search">全記事検索</NuxtLink></p>
   <ul>
     <li><NuxtLink to="/political-science">政治学</NuxtLink></li>
     <li><NuxtLink to="/sociology">社会学</NuxtLink></li>
