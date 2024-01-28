@@ -1,5 +1,4 @@
 <template>
-  <h1>My Blog（仮）</h1>
   <p>日中はWebサイトを作ってます。</p>
   <ul>
     <li><NuxtLink to="/political-science">政治学</NuxtLink></li>
