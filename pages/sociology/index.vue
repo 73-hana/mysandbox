@@ -11,7 +11,7 @@
     <h2>社会学の本を読む</h2>
     <p>古典から現代の本まで、気になるものを読む</p>
     <ul>
-      <li>準備中</li>
+      <li><NuxtLink to="/sociology/book/wissenschaft-als-beruf">職業としての学問</NuxtLink></li>
     </ul>
   </section>
   <p><NuxtLink to="/">トップ</NuxtLink></p>
