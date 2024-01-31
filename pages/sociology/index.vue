@@ -5,6 +5,7 @@
     <p>公務員試験の範囲に沿って、社会学の基礎を勉強します。</p>
     <ul>
       <li><NuxtLink to="/sociology/article/basic/synthetic-sociology">総合社会学</NuxtLink></li>
+      <li><NuxtLink to="/sociology/article/basic/formal-sociology">形式社会学</NuxtLink></li>
     </ul>
   </section>
   <section>

@@ -5,6 +5,7 @@
     <p>公務員試験の範囲に沿って、政治学の基礎を勉強します。</p>
     <ul>
       <li><NuxtLink to="/political-science/article/basic/from-modern-to-contemporary">近代から現代へ</NuxtLink></li>
+      <li><NuxtLink to="/political-science/article/basic/night-watchman-state-and-walfare-state">夜警国家と福祉国家</NuxtLink></li>
     </ul>
   </section>
   <section>
