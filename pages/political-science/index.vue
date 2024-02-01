@@ -12,7 +12,7 @@
     <h2>政治学の本を読む</h2>
     <p>古典から現代の本まで、気になるものを読む</p>
     <ul>
-      <li>準備中</li>
+      <li><NuxtLink to="/political-science/book/le-contrat-social">ルソー『社会契約論』</NuxtLink></li>
     </ul>
   </section>
   <p><NuxtLink to="/">トップ</NuxtLink></p>
