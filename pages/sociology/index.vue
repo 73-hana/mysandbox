@@ -6,6 +6,7 @@
     <ul>
       <li><NuxtLink to="/sociology/article/basic/synthetic-sociology">総合社会学</NuxtLink></li>
       <li><NuxtLink to="/sociology/article/basic/formal-sociology">形式社会学</NuxtLink></li>
+      <li><NuxtLink to="/sociology/article/basic/max-weber">マックス・ウェーバー</NuxtLink></li>
     </ul>
   </section>
   <section>
