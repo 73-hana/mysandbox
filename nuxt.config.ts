@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/myblog/'
   },
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+  ],
   content: {
     experimental: {
       search: true,

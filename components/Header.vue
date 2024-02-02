@@ -3,9 +3,7 @@
 
 <template>
   <header class="header">
-    <div class="header_sitelogo">
-      My Blog
-    </div>
+    <div class="header_sitelogo"><NuxtLink to="/">My Blog</NuxtLink></div>
     <nav>
       <ul class="header_nav">
         <li><NuxtLink to="/political-science/">政治学</NuxtLink></li>
@@ -32,8 +30,9 @@
   top: 0;
   background-color: white;
   &_sitelogo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
+    font-style: italic;
   }
   &_nav,
   &_link {
