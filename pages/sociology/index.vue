@@ -3,18 +3,36 @@
   <section>
     <h2>社会学の基礎を学ぶ</h2>
     <p>公務員試験の範囲に沿って、社会学の基礎を勉強します。</p>
-    <ul>
-      <li><NuxtLink to="/sociology/article/basic/synthetic-sociology">総合社会学</NuxtLink></li>
-      <li><NuxtLink to="/sociology/article/basic/formal-sociology">形式社会学</NuxtLink></li>
-      <li><NuxtLink to="/sociology/article/basic/max-weber">マックス・ウェーバー</NuxtLink></li>
-    </ul>
+    <ContentList path="/sociology/article/basic">
+      <template #default="{ list }">
+        <ul>
+          <li v-for="article in list" v-bind:key="article._path">
+            <NuxtLink v-bind:to="article._path">{{ article.title }}</NuxtLink>
+          </li>
+        </ul>
+      </template>
+      <template #not-found>
+        <p>準備中</p>
+      </template>
+    </ContentList>
   </section>
   <section>
     <h2>社会学の本を読む</h2>
     <p>古典から現代の本まで、気になるものを読む</p>
-    <ul>
-      <li><NuxtLink to="/sociology/book/wissenschaft-als-beruf">職業としての学問</NuxtLink></li>
-    </ul>
+    <ContentList path="/sociology/book">
+      <template #default="{ list }">
+        <ul>
+          <li v-for="article in list" v-bind:key="article._path">
+            <NuxtLink v-bind:to="article._path">{{ article.title }}</NuxtLink>
+          </li>
+        </ul>
+      </template>
+      <template #not-found>
+        <p>準備中</p>
+      </template>
+    </ContentList>
   </section>
-  <p><NuxtLink to="/">トップ</NuxtLink></p>
+  <p>
+    <NuxtLink to="/">トップ</NuxtLink>
+  </p>
 </template>

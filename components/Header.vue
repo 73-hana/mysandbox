@@ -4,12 +4,14 @@
 <template>
   <header class="header">
     <div class="header_sitelogo">
-      My Blog (tentative name)
+      My Blog
     </div>
     <nav>
       <ul class="header_nav">
         <li><NuxtLink to="/political-science/">政治学</NuxtLink></li>
         <li><NuxtLink to="/sociology/">社会学</NuxtLink></li>
+        <li><NuxtLink to="/economics/">経済学</NuxtLink></li>
+        <li><NuxtLink to="/programming/">プログラミング</NuxtLink></li>
       </ul>
     </nav>
     <ul class="header_link">
