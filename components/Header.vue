@@ -3,7 +3,7 @@
 
 <template>
   <header class="header">
-    <div class="header_sitelogo"><NuxtLink to="/">My Blog</NuxtLink></div>
+    <div class="header_sitelogo"><NuxtLink to="/">My Sandbox</NuxtLink></div>
     <nav>
       <ul class="header_nav">
         <li><NuxtLink to="/political-science/">政治学</NuxtLink></li>
@@ -13,7 +13,7 @@
       </ul>
     </nav>
     <ul class="header_link">
-      <li><a href="https://github.com/73-hana/myblog" target="_blank" rel="noreferrer noopener">GitHub</a></li>
+      <li><a href="https://github.com/73-hana/mysandbox" target="_blank" rel="noreferrer noopener">GitHub</a></li>
     </ul>
   </header>
 </template>

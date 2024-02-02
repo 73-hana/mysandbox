@@ -3,10 +3,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/content'],
   app: {
-    baseURL: '/myblog/',
+    baseURL: '/mysandbox/',
     head: {
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/myblog/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/mysandbox/favicon.ico' }
       ],
     }
   },
@@ -16,6 +16,9 @@ export default defineNuxtConfig({
     },
     markdown: {
       anchorLinks: false,
+    },
+    highlight: {
+      theme: 'github-light'
     }
   }
 })

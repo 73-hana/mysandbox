@@ -3,7 +3,7 @@
   <section>
     <h2>JSの本を読む</h2>
     <p>技術書を中心に読む。</p>
-    <ContentList path="/programming/js/book">
+    <ContentList path="/programming/book/js">
       <template #default="{ list }">
         <ul>
           <li v-for="article in list" v-bind:key="article._path">

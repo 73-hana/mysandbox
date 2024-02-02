@@ -6,5 +6,5 @@
     <li><NuxtLink to="/economics">経済学</NuxtLink></li>
     <li><NuxtLink to="/programming/">プログラミング</NuxtLink></li>
   </ul>
-  <p>内容に間違いがあれば<a href="https://github.com/73-hana/myblog/issues/new" target="_blank" rel="noreferrer noopener">GitHubのIssue</a>からお知らせください。</p>
+  <p>内容に間違いがあれば<a href="https://github.com/73-hana/mysandbox/issues/new" target="_blank" rel="noreferrer noopener">GitHubのIssue</a>からお知らせください。</p>
 </template>
