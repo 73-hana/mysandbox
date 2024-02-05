@@ -19,11 +19,57 @@ ES2015の前なので、モダンJavaScriptに沿った内容ではないと思�
 値は静的でもあるし、動的(関数)でもある。JSの文脈では、このオブジェクト上で動作する関数のことをメソッドという。
 
 ```js
-const cody = new object();
+const codyA = new object();
 cody.living = true;
 cody.age = 33;
 cody.gender = 'male';
 cody.getGender = function() {
   return cody.gender;
 };
+```
+
+コンストラクタ関数とは、あらかじめ決められたオブジェクトを生成する関数である。テンプレートやクッキーのぬき型だと覚えれば良い。
+
+オブジェクトが`object()`コンストラクタ関数によって生成されるという一連の動作は、文字列オブジェクトが`String（）`コンストラクタによって生成されるという一連の動作とあまり変わらない。JSでは、値をオブジェクトで表現する。（実際のところはプリミティブ型をオブジェクト型として扱うことはあまりない。）
+
+`object()`コンストラクタ関数を用いてオブジェクトを生成する場合と、自作のコンストラクタ関数を用いてオブジェクトを生成する場合との違いは、オブジェクト自体にあるのではなく、コンストラクタ関数に違いがある。（むしろ、オブジェクト自体には違いがない？）
+
+```js
+const Person = function(living, age, gender) {
+  this.living = living;
+  this.age = age;
+  this.gender = gender;
+  this.getGender = function() { return this.gender; };
+};
+
+const codyB = new Person(true, 33, 'male');
+```
+
+JSは少数の組み込みオブジェクトコンストラクタ関数が存在する言語にすぎない。この組み込みコンストラクタが、ユーザ定義のオブジェクトコンストラクタを構築する材料になる。このため、JSではオブジェクトが生成されるのである。
+
+## コンストラクタ関数はオブジェクトインスタンスを構築して返す
+
+コンストラクタ関数の役目は、共通のプロパティ・メソッドを持ったオブジェクト（インスタンス）を何度も生成することである。
+
+コンストラクタ関数はnew演算子と一緒に使用されると、以下のような特別な動きをする。
+
+- コンストラクタ関数の中のthisがインスタンスを指す。
+- return文のない関数は実行されるとfalseに相当する値を返すが、コンストラクタ関数はインスタンスが返り値になる。
+
+```js
+const Person = function Person(living, age, gender) {
+  // thisはインスタンスである。（this = new Object())
+  this.living = living;
+  this.age = age;
+  this.gender = gender;
+  this.getGender = function() {
+    return this.gender;
+  }
+  // return文がないが、コンストラクタ関数はthisを返す。
+}
+
+const cody = new Person(true, 33, 'male');
+console.log(typeof cody); // object
+console.log(cody); // codyのキーと値を出力
+console.log(cody.constructor); // Person関数そのもの
 ```
