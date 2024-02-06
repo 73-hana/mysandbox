@@ -47,7 +47,7 @@ const codyB = new Person(true, 33, 'male');
 
 JSは少数の組み込みオブジェクトコンストラクタ関数が存在する言語にすぎない。この組み込みコンストラクタが、ユーザ定義のオブジェクトコンストラクタを構築する材料になる。このため、JSではオブジェクトが生成されるのである。
 
-## 第二章 コンストラクタ関数はオブジェクトインスタンスを構築して返す
+### 1.2 コンストラクタ関数はオブジェクトインスタンスを構築して返す
 
 コンストラクタ関数の役目は、共通のプロパティ・メソッドを持ったオブジェクト（インスタンス）を何度も生成することである。
 
@@ -73,3 +73,32 @@ console.log(typeof cody); // object
 console.log(cody); // codyのキーと値を出力
 console.log(cody.constructor); // Person関数そのもの
 ```
+
+### 1.3 ネイティブ/ビルトインオブジェクトのコンストラクタ
+
+JSには9つのネイティブオブジェクトコンストラクタがある。値を表すだけでなく、JSの機能もこのコンストラクタに格納されている。
+
+- `Number()`
+- `String()`
+- `Boolean()`
+- `Object()`
+- `Array()`
+- `Function()`
+- `Date()`
+- `RegExp()`
+- `Error()`
+
+Mathオブジェクトは数字関数や定数を格納するための名前空間(静的なオブジェクト)であるため、コンストラクタとしては使用されない。
+
+`Number()`や`String()`、`Boolean()`は、コンストラクタ関数として使用するとオブジェクトを返す。数字や文字列、真偽値をリテラルで記述する場合も裏でこれらのコンストラクタ関数は実行されるが、その場合はオブジェクトではなくプリミティブ値を返す。
+
+```js
+const str1 = String('sample'); // new演算子なしのコンストラクタ
+const str2 = new String('sample'); // new演算子を伴うコンストラクタ
+const str3 = 'sample' // リテラル
+
+console.log(typeof str1, typeof str2, typeof str3); // string object string
+console.log(str1, str2, str3); // sample String{'sample'} sample
+```
+
+`Number()`や`String()`、`Boolean()`をコンストラクタ関数としてそのまま使う機会はほぼない上に、使うべきではない。
