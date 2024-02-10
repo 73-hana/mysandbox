@@ -1,5 +1,12 @@
+<script setup>
+const route = useRoute();
+console.log(route.fullPath);
+</script>
+
 <template>
-  <Header />
+  <template v-if="route.fullPath !== '/sociology/book/la-distinction-simplified'">
+    <Header />
+  </template>
   <main>
     <NuxtPage />
   </main>
