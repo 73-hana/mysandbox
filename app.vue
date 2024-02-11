@@ -14,8 +14,15 @@ const route = useRoute();
 <style>
 body {
   margin: 0;
+  background-color: ghostwhite;
 }
 main {
   padding: 0 20px;
+}
+strong {
+  text-decoration: underline double yellow;
+}
+em {
+  color: darkgray;
 }
 </style>

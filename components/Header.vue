@@ -28,7 +28,7 @@
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: beige;
   &_sitelogo {
     font-size: 1.5rem;
     font-weight: 700;
