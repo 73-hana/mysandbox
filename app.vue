@@ -1,10 +1,9 @@
 <script setup>
 const route = useRoute();
-console.log(route.fullPath);
 </script>
 
 <template>
-  <template v-if="route.fullPath !== '/sociology/book/la-distinction-simplified'">
+  <template v-if="route.fullPath !== '/public-file/la-distinction-simplified'">
     <Header />
   </template>
   <main>
