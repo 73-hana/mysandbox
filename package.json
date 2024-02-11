@@ -6,7 +6,6 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "deploy": "gh-pages -d dist",
     "all-in-one": "nuxt build && nuxt generate && gh-pages -d dist"
   },
   "devDependencies": {
