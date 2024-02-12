@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/mysandbox/',
     head: {
+      meta: [
+          { name: 'robots', content: 'noindex,nofollow' },
+      ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/mysandbox/favicon.ico' },
         { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css', integrity: 'sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV', crossorigin: 'anonymous'}
