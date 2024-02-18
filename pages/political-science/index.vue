@@ -17,6 +17,23 @@
     </ContentList>
   </section>
   <section>
+    <h2>政治学の教科書を読む</h2>
+    <p>面白そうな教科書のノート</p>
+    <h3>久米他(2011)『政治学 補訂版』有斐閣</h3>
+    <ContentList path="/political-science/textbook">
+      <template #default="{ list }">
+        <ul>
+          <li v-for="article in list" v-bind:key="article._path">
+            <NuxtLink v-bind:to="article._path">{{ article.title }}</NuxtLink>
+          </li>
+        </ul>
+      </template>
+      <template #not-found>
+        <p>準備中</p>
+      </template>
+    </ContentList>
+  </section>
+  <section>
     <h2>政治学の本を読む</h2>
     <p>古典から現代の本まで、気になるものを読む</p>
     <ContentList path="/political-science/book">
